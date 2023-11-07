@@ -9,6 +9,10 @@
 				margin: 0;
 			}
 			
+			h3 {
+				font-size: 2em;
+			}
+			
 			.hero-image {
 				background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/Steam/images/steam_background.jpg");
 				width: 100vw;
@@ -58,6 +62,7 @@
 				padding-right: 10px;
 				padding-bottom: 1.2em;
 				font-size: 0.8em;
+				margin-top: 0.8em;
 			}
 			
 			table {
@@ -65,12 +70,22 @@
 				margin-right: auto;
 			}
 			
-			article { text-align: center; }
+			article { 
+				text-align: left;
+				max-width: 35em;
+				padding-bottom: .8em;
+				padding-top: .8em;
+				margin-left: 2em;
+			}
 			
 			/* image shake*/
 			.image-enlarge:hover { 
 				transform: scale(1.2); 
 				transition: transform .2s; 
+			}
+			
+			steam-logo {
+				float: right;
 			}
 			
 		</style>
@@ -79,6 +94,17 @@
 		<link rel="icon" type="image/x-icon" href="assets/Steam/images/steam_logo.ico">
 	</head>
 	<body>
+		<div class="topnav">
+			<a href="Homepage.html">Homepage</a>
+			<a href="BlizzardRemakeHTML.html">Blizzard</a>
+			<a href="Steam.html">Steam</a>
+			<a href="ubisoft_page.html">Ubisoft Connect</a>
+			<a href="Downloads.html">Epic Games</a>
+			<a href="Epic Games.html">Downloads</a>
+			<a href="Contact Us.html">Contact Us</a>
+			<a href="SupportPage.html">Support</a>
+		</div>
+		
 		<!--Hero Selection for the website-->
 		<div class="hero-image">
 			<div class="hero-text">
@@ -88,15 +114,16 @@
 			</div>
 		</div>
 		
-				
 		<article>
 			<h3>What is Steam?</h3>
 			<p>Steam is value's digital distribution platform released back in 2003 and has since then been the biggest and most popular platform for video games as well as providing a storefront where developers specially indies would sell and gamers would buy on their platform.</p>
+			<img src="assets/Steam/images/steam_logo.png" width="250" height="250" alt="Steam Logo" class="steam-logo">
 		</article>
 		
 		<article>
 			<h3>What does Steam have to offer?</h3>
 			<p>Steam offers a vast catalog of digital video games and software titles that are available to purchase and download, including very popular AAA and indie titles and various of multimedia content on their platform. It also has a robust community on their social networking side on the platform, allowing for users to connect with their friends, join various groups, participate in online discussions on forums and share their gameplay experiences with the millions of players across the globe.</p>
+			<img src="assets/Steam/images/steam-library.jpg" width="640" height="550" alt="Steam Logo" class="steam-logo">
 		</article>
 		
 		<article>
@@ -122,9 +149,10 @@
 			</table>
 		</article>
 		
-		
-		<h3>Where to Download?</h3>
-		<p>You can visit our&nbsp<a href="Downloads.html">downloads page</a>&nbspfor information on how to install the steam launcher onto your computer.</p>
+		<article>
+			<h3>Where to Download?</h3>
+			<p>You can visit our&nbsp<a href="Downloads.html">downloads page</a>&nbspfor information on how to install the steam launcher onto your computer.</p>
+		</article>
 
 	</body>
 </html>

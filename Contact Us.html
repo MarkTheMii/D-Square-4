@@ -1,26 +1,55 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" href="assets/styles.css">
+		<style>
+			img {
+				border-radius: 15px 50px;
+				float: right;
+			}
+			
+			form {
+				border: 0.3em solid;
+				width: 20em;
+				border-radius: 4px;
+				text-align: center;
+			}
+			
+			input[type=text] {
+				width: 100%;
+				padding: 12px 20px;
+				margin: 8px 0;
+				box-sizing: border-box;
+			}
+		</style>
+		
 		<title>Contact Us</title>
 		<h1>Contact Us</h1>
 	</head>
 	<body>
 
-	<a href="Home.html">Homepage</a>
-	&nbsp;
-	<a href="Downloads.html">Downloads</a>
-	&nbsp;
-	<a href="FAQs.html">FAQs</a>
-	&nbsp;
-	<a href="ContactUs.html">Contact Us</a>
+		<div class="topnav">
+			<a href="Homepage.html">Homepage</a>
+			<a href="BlizzardRemakeHTML.html">Blizzard</a>
+			<a href="Steam.html">Steam</a>
+			<a href="ubisoft_page.html">Ubisoft Connect</a>
+			<a href="Downloads.html">Epic Games</a>
+			<a href="Epic Games.html">Downloads</a>
+			<a href="Contact Us.html">Contact Us</a>
+			<a href="SupportPage.html">Support</a>
+		</div>
 
+	<img src="assets/Contact Us/images/contact_us.jpg" width="400" height="240" alt="Contact Us">
 	<p>Before asking any questions regarding the website and it's services.<br>Please feel free to check out the <a href="FAQs.html">FAQs</a> page before continuing to contact us.<br>If your question isn't answered there and you need further assistance.<br><br>You can either contact us by email address at <a href = "mailto: placeholder@example.com">placeholder@example.com</a><br>or shoot us a message through our message box below.</p>
-	<p>We will try our best to response back within 1-2 business days.</p><br>
-	<img src="assets/Contact Us/images/contact_us.jpg" width="250" height="150" alt="Windows Logo">
-	<h3>Contact Form:</h3>
+	
+	<p>We will try our best to response back within 1-2 business days.</p>
+	
 	<form>
+		<h3>Contact Form:</h3>
+		
 		<label type="email" id="email" name="email"></label>
 		Email: <input type="email" id="email" name="email" placeholder="Email Address" required><br>
+		<label type="email" id="email" name="email"></label>
 		Message: <textarea name="Message" cols rows placeholder="Please type your message here in this text box." required></textarea><br>
 		<input type="submit" value="Sent">
 	</form>
