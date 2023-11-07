@@ -7,14 +7,13 @@
 			body, html {
 				height: 100%;
 				margin: 0;
+				background-color: black;
+				color: white;
 			}
 			
-			h3 {
-				font-size: 2em;
-			}
-			
+			/* hero Page */
 			.hero-image {
-				background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/Steam/images/steam_background.jpg");
+				background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/Steam/images/steam_background.png");
 				width: 100vw;
 				height: 100vh;
 				background-position: center;
@@ -46,8 +45,15 @@
 			.hero-text button:hover {
 				background-color: #555;
 				color: white;
+				transform: scale(1.2); 
+				transition: transform .2s;
+				font-weight: bold;
 			}
 			
+			h3 {
+				font-size: 2em;
+			}
+					
 			th { 
 				padding-bottom: 1.2em; 
 				font-size: 1.2em;
@@ -110,7 +116,7 @@
 			<div class="hero-text">
 				<h1 style="font-size:50px">Steam</h1>
 				<p>A platform and storefront for all PC gamers.</p>
-				<button>Download</button>
+				<button onclick="document.location='Downloads.html'">Download</button>
 			</div>
 		</div>
 		
