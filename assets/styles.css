@@ -1,8 +1,14 @@
-html{
+/* html {
+	background-color: #1d1c1c;
 	font-family: 'Poppins', sans-serif;
+	background-image: linear-gradient(rgba(150, 16, 150, 0.141), rgb(45, 44, 45)), url(assets/Homepage/blue-and-purple-galaxy.jpg);
+	background-size: auto;
+  }
+  */
+  
+body { 
+	font-family: Arial;
 }
-
-
 /* navigation bar */
 
 .topnav {
