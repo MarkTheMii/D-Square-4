@@ -79,7 +79,7 @@
     }
 
     .mainbanner {
-      background-image: url(../../../space\ banner.jpeg);
+      background-image: url(./assets/Homepage/images/space\ banner.jpeg);
       background-position: center;
       background-size: cover;
       border-radius: 23px;
@@ -91,7 +91,7 @@
       text-shadow: #1d1c1c;
     }
 
-    .ubi {
+    .container{
       background-color: #1d1c1c;
       padding: 3px 5px 3px 5px;
       margin-right: 300px;
@@ -102,77 +102,24 @@
       overflow: hidden;
       flex-shrink: 0;
     }
-
-    .blizzy {
-      background-color: #1d1c1c;
-      padding: 3px 5px 3px 5px;
-      margin-top: 100px;
-      margin-right: 300px;
-      margin-left: 300px;
-      border-radius: 30px;
-      position: static;
-      overflow: hidden;
+    button{
+        font-size: 100%;
+        background-color:rgb(238, 93, 161);
+        padding: 15px 50px 15px 50px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+		transition-duration: 0.4s;
+    }
+    button:hover{
+        background-color:rgb(236, 233, 236);
+        color:#1d1c1c;
     }
 
-    img {
-      border-radius: 25px;
-    }
-
-    .steamy {
-      background-color: #1d1c1c;
-      padding: 3px 5px 3px 5px;
-      margin-top: 100px;
-      margin-right: 300px;
-      margin-left: 300px;
-      border-radius: 30px;
-      overflow: hidden;
-    }
-
-    .thisISepic {
-      background-color: #1d1c1c;
-      padding: 3px 5px 3px 5px;
-      margin-top: 100px;
-      margin-right: 300px;
-      margin-left: 300px;
-      border-radius: 30px;
-      overflow: hidden;
-    }
-
-    .ubisoftbutton {
-      background-color: rgb(238, 93, 161);
-      padding: 15px;
-      border-radius: 50px;
-      margin-left: 150px;
-      margin-right: 150px;
-      overflow: hidden;
-    }
-
-    .blizzbutton {
-      background-color: rgb(238, 93, 161);
-      padding: 15px;
-      border-radius: 50px;
-      margin-left: 150px;
-      margin-right: 150px;
-      overflow: hidden;
-    }
-
-    .steambutton {
-      background-color: rgb(238, 93, 161);
-      padding: 15px;
-      border-radius: 50px;
-      margin-left: 150px;
-      margin-right: 150px;
-      overflow: hidden;
-    }
-
-    .epicbutton {
-      background-color: rgb(238, 93, 161);
-      padding: 15px;
-      border-radius: 50px;
-      margin-left: 150px;
-      margin-right: 150px;
-      overflow: hidden;
-    }
+    
+    
+    
+    
   </style>
   </head>
   <div class="topnav">
@@ -202,37 +149,51 @@
         <br>
         <p style="text-align: center; font-size: 180%;"> GAME <span style="color: rgb(255, 99, 255);">LAUNCHERS</span>
         </p>
-        <div class="ubi">
+        <div class="container">
+        <div class="redirectbutton">
+            <div class="redirect-text">
           <h3 style="text-align: center">
-            <img src="assets/Ubisoft/images/ubisoft game.jpeg" height="300px" width="550px" alt="ubisoft">
+            <img src="./assets/Homepage/images/battlenet.jpeg" height="300px" width="550px" alt="ubisoft">
             <div class="ubisoftbutton">
-              <a href="ubisoft_page.html">UBISOFT CONNECT</a>
-              <br>
+                <button onclick="document.location='ubisoft_page.html'">UBISOFT CONNECT</button>
+              </div>
+            </div>
             </div>
           </h3>
         </div>
-        <div class="blizzy">
+        <div class="container">
+        <div class="redirectbutton">
+            <div class="redirect-text">
           <h3 style="text-align: center;">
-            <img src="GAME LAUNCHER IMGS/battlenet.jpeg" height="300px" width="550px" alt="blizzard">
+            <img src="./assets/Homepage/images/Blizzard.jpeg" height="300px" width="550px" alt="blizzard">
             <div class="blizzbutton">
-              <a href="BlizzardRemakeHTML.html">BLIZZARD (BATTLE.NET)</a>
+                <button onclick="document.location='BlizzardRemakeHTML'">BLIZZARD</button>
             </div>
+        </div>
+        </div>
           </h3>
         </div>
-        <div class="steamy">
+        <div class="container">
+        <div class="redirectbutton">
+        <div class="redirect-text">
           <h3 style="text-align: center;">
-            <img src="GAME LAUNCHER IMGS/steam-social.jpeg" height="300px" width="550px" alt="steam">
+            <img src="./assets/Homepage/images/steam-social.jpeg" height="300px" width="550px" alt="steam">
             <div class="steambutton">
-              <a href="Steam.html">STEAM</a>
+                <button onclick="document.location='STEAM.html'">STEAM</button>
+                </div>
+            </div>
             </div>
           </h3>
         </div>
-        <div class="thisISepic">
+        <div class="container">
+        <div class="redirectbutton">
+            <div class="redirect-text">
           <h3 style="text-align: center;">
-            <img src="GAME LAUNCHER IMGS/epic games.jpeg" height="300px" width="550px" alt="epic">
+            <img src="./assets/Homepage/images/epic games.jpeg" height="300px" width="550px" alt="epic">
             <div class="epicbutton">
-              <a href="/Epic Games Page.html">EPIC GAMES</a>
-              <br>
+                <button onclick="document.location='Epic Games Page.html'">EPIC GAMES</button>
+              </div>
+            </div>
             </div>
           </h3>
         </div>
@@ -247,19 +208,19 @@
       </tr>
       <tr>
         <td>
-          <img src="GAME LAUNCHER IMGS/New Games/mw3.jpeg" height="200px" width="150px" alt="mw3">
+          <img src="./assets/Homepage/images/New Games/spiderman2.avif" height="200px" width="150px" alt="mw3">
         </td>
         <td>
-          <img src="GAME LAUNCHER IMGS/New Games/nba2k.jpeg" height="200px" width="150px" alt="nba">
+          <img src="./assets/Homepage/images/New Games/nba2k.jpeg" height="200px" width="150px" alt="nba">
         </td>
         <td>
-          <img src="GAME LAUNCHER IMGS/New Games/resi-evil.jpeg" height="200px" width="150px" alt="resident">
+          <img src="./assets/Homepage/images/New Games/resi-evil.jpeg" height="200px" width="150px" alt="resident">
         </td>
         <td>
-          <img src="GAME LAUNCHER IMGS/New Games/fate.jpeg" height="200px" width="150px" alt="fate">
+          <img src="./assets/Homepage/images/New Games/fate.jpeg" height="200px" width="150px" alt="fate">
         </td>
         <td>
-          <img src="GAME LAUNCHER IMGS/New Games/mk1.jpeg" height="200px" width="150px" alt="mk1">
+          <img src="./assets/Homepage/images/New Games/mk1.jpeg" height="200px" width="150px" alt="mk1">
         </td>
       </tr>
       <tr>
@@ -279,19 +240,19 @@
       </tr>
       <tr>
         <td>
-          <img src="GAME LAUNCHER IMGS/Popular Games/co2ekt.jpeg" height="200px" width="150px" alt="fortnite">
+          <img src="./assets/Homepage/images/Popular Games/co2ekt.jpeg" height="200px" width="150px" alt="fortnite">
         </td>
         <td>
-          <img src="GAME LAUNCHER IMGS/Popular Games/mw3.jpeg" height="200px" width="150px" alt="mwagain">
+          <img src="./assets/Homepage/images/Popular Games/mw3.jpeg" height="200px" width="150px" alt="mwagain">
         </td>
         <td>
-          <img src="GAME LAUNCHER IMGS/Popular Games/rocket_league.webp" height="200px" width="150px" alt="rocket">
+          <img src="./assets/Homepage/images/Popular Games/rocket_league.webp" height="200px" width="150px" alt="rocket">
         </td>
         <td>
-          <img src="GAME LAUNCHER IMGS/Popular Games/Apex_Legends.webp" height="200px" width="150px" alt="apex">
+          <img src="./assets/Homepage/images/Popular Games/Apex_Legends.webp" height="200px" width="150px" alt="apex">
         </td>
         <td>
-          <img src="GAME LAUNCHER IMGS/Popular Games/gta5.webp" height="200px" width="150px" alt="gta">
+          <img src="./assets/Homepage/images/Popular Games/gta5.webp" height="200px" width="150px" alt="gta">
         </td>
       </tr>
       <br>
