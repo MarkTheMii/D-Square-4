@@ -14,6 +14,43 @@
       background-image: linear-gradient(rgba(10, 35, 80, 0.306), rgba(0, 0, 0, 0.961)), url(./Blizzard/images/frozen-background.jpeg);
       background-size:contain;
     }
+    .hero-image {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/BlizzardHero-page.jpeg);
+      width: 100vw;
+      height: 100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+    
+    .hero-text {
+      font-size: 1.5em;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+    
+    .hero-text button {
+      border: none;
+      display: inline-block;
+      padding: 10px 25px;
+      background-color: #ddd;
+      text-align: center;
+      cursor: pointer;
+      transition-duration: 0.4s;
+    }
+    
+    .hero-text button:hover {
+      background-color: #555;
+      color: white;
+      transform: scale(1.2); 
+      transition: transform .2s;
+      font-weight: bold;
+    }
     
     
     
@@ -33,9 +70,17 @@
         <a href="Contact Us.html">Contact Us</a>
         <a href="SupportPage.html">Support</a>
       </div>
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1 style="font-size:50px">Blizzard Entertainment</h1>
+          <p>A platform and storefront for all PC gamers. Blizzard is a developer and publisher of entertainment software that provides games.
+            Blizzard Entertainment is known for creating some of the biggest games such as Diablo, Overwatch, Warcraft and many more.To download battle net click</p>
+          <button onclick="document.location='Downloads.html'">Download</button>
+        </div>
+      </div>
       
-     <h1 style="color:white;">Blizzard Entertainment</h1>
-     <p style="color:white;">Blizzard is a developer and publisher of entertainment software that provides games.Blizzard entertainment is known for creating some of the biggest games such as Diablo,Overwatch,Warcraft and many more.To download battle net click <a href="Downloads.html">here.</a> </p>
+     
+     
 
 
      <h1 style="color:white;">Games we offer:</h1>
