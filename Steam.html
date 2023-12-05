@@ -13,6 +13,52 @@
 				background-color: black;
 				color: white;
 			}
+
+			/* idk something usual */
+			.maincontent {
+      			background-color: #393838;
+      			border-radius: 50px;
+      			margin: 25px 70px 25px 70px;
+      			padding: 50px;
+    		}
+
+    		footer {
+      			text-align: center;
+      			padding-top: 50px;
+    		}
+
+    		.parent-ubi {
+      			display: flex;
+      			padding: 20px;
+      			margin: 15px;
+      			float: left;
+    		}
+
+    		.ubi-realtime {
+      			padding: 15px;
+      			margin: -5px;
+      			border-radius: 30px;
+      			flex: 0;
+    		}
+
+    		.topcontainer {
+      			background-color: #1d1c1c;
+      			background-image: linear-gradient(to right, rgba(134, 159, 229, 0.942), rgba(255, 255, 255, 0)), url(./assets/Steam/images/steam_backdrop.jpg);
+      			background-size: cover;
+      			background-position: center;
+      			border-radius: 30px;
+      			padding: 100px 60px;
+      			mix-blend-mode: hard-light;
+      			color: #bbb8b8;
+    		}
+
+    		.img-radius {
+      			border-radius: 30px;
+    		}
+
+    		main a:hover {
+      			color: white;
+    		}
 			
 			/* hero Page */
 			.hero-image {
@@ -37,12 +83,12 @@
 			
 			.hero-text button {
 				font-size: 70%;
-        background-color:rgb(93, 194, 238);
-        padding: 10px 40px 10px 40px;
-        border: none;
-        border-radius: 30px;
-        cursor: pointer;
-		transition-duration: 0.4s;
+        		background-color:rgb(93, 194, 238);
+        		padding: 10px 40px 10px 40px;
+        		border: none;
+        		border-radius: 30px;
+        		cursor: pointer;
+				transition-duration: 0.4s;
 			}
 			
 			.hero-text button:hover {
@@ -124,20 +170,27 @@
 			</div>
 		</div>
 		
-		<article>
-			<h3>What is Steam?</h3>
-			<p>Steam is value's digital distribution platform released back in 2003 and has since then been the biggest and most popular platform for video games as well as providing a storefront where developers specially indies would sell and gamers would buy on their platform.</p>
-			<img src="assets/Steam/images/steam_logo.png" width="250" height="250" alt="Steam Logo" class="steam-logo">
-		</article>
-		
-		<article>
-			<h3>What does Steam have to offer?</h3>
-			<p>Steam offers a vast catalog of digital video games and software titles that are available to purchase and download, including very popular AAA and indie titles and various of multimedia content on their platform. It also has a robust community on their social networking side on the platform, allowing for users to connect with their friends, join various groups, participate in online discussions on forums and share their gameplay experiences with the millions of players across the globe.</p>
-			<img src="assets/Steam/images/steam-library.jpg" width="640" height="550" alt="Steam Logo" class="steam-logo">
-		</article>
-		
-		<article>
-			<h3>What platforms does Steam support?</h3>
+		<main class="maincontent">
+			<div class="topcontainer" style="font-family: sans-serif; color: #ddd8d8;">
+			  <head>
+				<h2 style="text-align: left; ">STEAM</h2>
+			  </head>
+			  <p style="text-align: left; margin-right: 300px; line-height: 30px; font-size: 120%">Steam is Value's digital distribution plaform. It offers vast catalog of digital video games and software titles that are available to purchase and download, including very popular AAA and indie titles and various of multimedia content on their platform.</p>
+			</div>
+			<div class="parent-ubi">
+			  <div class="ubi-realtime">
+				<img src="assets/Steam/images/steam-library.jpg" height="300px" width="450px" >&nbsp;&nbsp;
+			  </div>
+			  <div class="ubi-realtime">
+				<img src="./assets/Steam/images/steam_store.jpg" height="300px" width="450px" class="img-radius">
+			  </div>
+			</div><br>
+			<p> It also has a robust community on their social networking side on the platform, allowing for users to connect with their friends, join various groups, participate in online discussions on forums and share their gameplay experiences with the millions of players across the globe.</p>
+			<br>
+		</main>
+			<main class="maincontent">
+			<div class="parent-ubi">
+				<h3>What platforms does Steam support?</h3>
 			<table>
 				<tr>
 					<th>Microsoft Windows</th>
@@ -157,12 +210,14 @@
 					<td>Ubuntu officially by Value.</td>
 				</tr>
 			</table>
-		</article>
-		
-		<article>
-			<h3>Where to Download?</h3>
-			<p>You can visit our&nbsp<a href="Downloads.html">downloads page</a>&nbspfor information on how to install the steam launcher onto your computer.</p>
-		</article>
+			</div>
+			<div class="parent-ubi">
+			<p>
+			  <b>You can visit our&nbsp<a href="Downloads.html">downloads page</a>&nbspfor information on how to install the steam launcher onto your computer.</b>
+			</p>
+			</div>
+		</div>
+		  </main>
 
 	</body>
 </html>
