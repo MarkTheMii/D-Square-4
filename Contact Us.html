@@ -81,6 +81,25 @@
         opacity: 1;
       }
     </style>
+
+  <script>
+    function validateForm(){
+      // 
+      let name = document.forms["ContactForm"]["name"].value;
+      let email = document.forms["ContactForm"]["email"].value;
+      let message = document.forms["ContactForm"]["message"].value;
+
+      // valid name, email, and message
+      if (name || email || message == "") {
+        alert("Contact form must be filled to submit.");
+        return false;
+      }
+
+      // validation pass
+      return true;
+    }
+
+</script>
   </head>
   <body>
 
@@ -98,17 +117,17 @@
       </div>
   
 <div class="bg-img">
-  <form class="container">
+  <form name="ContactForm" class="container" onsubmit="return validateForm()">
     <h1 class="contact-header">Contact Us</h1>
     
     <label for="text"><b>Name</b></label>
-    <input type="text" placeholder="Please enter your name." name="name" required>
+    <input type="text" placeholder="Please enter your name." name="name">
 
     <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
+    <input type="text" placeholder="Enter Email" name="email">
     
     <label for="text"><b>Message</b></label>
-    <textarea rows="4" cols="50" placeholder="Please type your message here in this text box."></textarea>
+    <textarea name="message" rows="4" cols="50" placeholder="Please type your message here in this text box."></textarea>
 
 
     <button type="submit" class="btn">Send</button>
@@ -119,5 +138,6 @@
   
   <p>We will try our best to response back within 1-2 business days.</p>
 
+  
 </body>
 </html>
