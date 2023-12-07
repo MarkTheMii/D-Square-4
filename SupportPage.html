@@ -1,5 +1,5 @@
 <html>
-  
+  <head>
   <body style="background-color:#38749c;">
 
     <style>
@@ -53,6 +53,37 @@
       
       
       </style>
+    <script>
+      function validateForm() {
+        const email = document.getElementById('email').value.trim();
+        const coemail = document.getElementById('coemail').value.trim();
+        const uname = document.getElementById('uname').value.trim();
+       
+  
+        if (email === "" || email.indexOf("@") === -1) {
+          alert("Invalid email");
+          return false;
+        }
+  
+        if (coemail === "" || coemail !== email) {
+          alert("Email section must be filled and must match");
+          return false;
+        }
+  
+        if (uname === "") {
+          alert("Username is required");
+          return false;
+        }
+      
+  
+        return true;
+      }
+  
+      
+      
+     
+    </script>
+  </head>
       <body>
         <h1 style="color:rgb(200, 200, 200); text-decoration:double;">Support Page</h1>
       
@@ -78,7 +109,8 @@
 
 
 
-<form action="/action_page.php">
+
+<form name="Form" onsubmit="return validateForm()">
   <label for="selection" style="color:rgb(200, 200, 200);"><b>Select One:</b></label>
   <select name="selection" id="selection">
     <option value="account">Account</option>
@@ -105,7 +137,7 @@
   <textarea rows="4" cols="50" name="comment" form="usrform">
   Please give a descriptive statement or summary on the issue you are facing...</textarea><br><br>
 
-  <input type="submit" value="Submit">
+   <button type="submit">Submit</button>
   
   </form>
 </div>
