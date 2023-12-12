@@ -11,6 +11,9 @@
         background-size: contain;
       }
 
+      textarea {
+        font-family: Arial, Helvetica, sans-serif;
+      }
       
       h1, p {
         color: white;
@@ -70,7 +73,7 @@
       
       /* Set a style for the submit button */
       .btn {
-        background-color: lightblue;
+        background-color: #0394fc;
         color: white;
         padding: 16px 20px;
         border: none;
@@ -86,19 +89,20 @@
 
   <script>
     function validateForm(){
-      // 
-      let name = document.forms["ContactForm"]["name"].value;
-      let email = document.forms["ContactForm"]["email"].value;
-      let message = document.forms["ContactForm"]["message"].value;
-
-      // valid name, email, and message
-      if (name || email || message == "") {
-        alert("Contact form must be filled to submit.");
-        return false;
-      }
-
-      // validation pass
-      return true;
+        const email = document.getElementById('email').value.trim();
+        const name = document.getElementById('name').value.trim();   
+  
+        if (email === "" || email.indexOf("@") === -1) {
+          alert("Email needs to be entered");
+          return false;
+        }
+  
+        if (name === "") {
+          alert("Name is required.");
+          return false;
+        }
+      
+        return true;
     }
 
 </script>
@@ -123,10 +127,10 @@
     <h1 class="contact-header">Contact Us</h1>
     
     <label for="text"><b>Name</b></label>
-    <input type="text" placeholder="Please enter your name." name="name">
+    <input type="text" placeholder="Please enter your name." id="name">
 
     <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email">
+    <input type="text" placeholder="Enter Email." id="email">
     
     <label for="text"><b>Message</b></label>
     <textarea name="message" rows="4" cols="50" placeholder="Please type your message here in this text box."></textarea>
